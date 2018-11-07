@@ -1,7 +1,7 @@
 
 ## [ThinkJS](http://www.thinkjs.org)
 ## 基于thinkjs框架 + redis + mongodb 搭建漂流瓶服务demo
-
+demo链接：[bottle.coolnodejs.com](http://bottle.coolnodejs.com)
 ## 安装依赖模块(进入根目录)
 npm install
 
