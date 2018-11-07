@@ -14,4 +14,5 @@ Use pm2 to deploy app on production enviroment.
 ## 部署到Linux 环境后，进入项目根目录下运行 以下命令
 ## node项目 便在生存环境下启动
 pm2 start pm2.json
+##
 pm2 startOrReload pm2.json
