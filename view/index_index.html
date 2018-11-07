@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Bottle Demo</title>
+  <meta name="keyword" content="bottle、漂流瓶、thinkjs框架搭建漂流瓶、node.js搭建漂流瓶">
+	<meta name="description" content="基于thinkjs框架+redis+mongodb搭建的漂流瓶服务。">
+	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+  <!--<link href="bottle.ico" rel="shortcut icon" type="image/x-icon">-->
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>This is a bottle demo.</h1>
+    </div>
+  </header>
+  <div class="content">
+    <div class="submit-btn">
+      <button id="throw" type="button">扔一个</button>
+      <button id="pick" type="button">检一个</button>
+      <button id="mybottle" type="button">我的瓶子</button>
+    </div>
+  </div>
+  <!--弹窗交互-->
+  <div class="tips-module">
+    <div class="tips-maskBg"></div>
+    <div class="tips-context">
+        <div class="tips-bg"></div>
+        <span class="tips-title">扔一个漂流瓶</span>
+        <div class="close-cont">
+            <a hidefocus="true" href="javascript:;">关闭</a>
+        </div>
+        <div class="tips-line"></div>
+        <div class="tips-throw">
+          用户名：<input autofocus type="text" name="lname" id="lname" maxlength="18" placeholder="请输入用户名..." />
+          性别：男&nbsp;<input type="radio" name="sex" value="male" />
+          女&nbsp;<input type="radio" name="sex" value="female" checked="checked" />
+          <!--<textarea autofocus rows="3" cols="20"></textarea>-->
+          <textarea id="txt" maxlength="100" placeholder="请输入内容..."></textarea>
+          <button id="throwOut" type="button">扔出去</button>
+          <span></span>
+        </div>
+        <div class="tips-pick">
+          <div id="pick-head">
+            用户名：<input autofocus type="text" name="pname" id="pname" maxlength="18" placeholder="请输入用户名..." />
+            <button id="pickBottle" type="button">检瓶子</button>
+          </div>
+          <div class="pick-cont">
+            <p id="pickTxt"></P>
+          </div>
+          <button id="throwBack" type="button">扔回海里</button>
+          <button id="reply" type="button">回应</button>
+        </div>
+        <div class="tips-mybottle">
+          <div class="mybottle-head">
+            用户名：<input autofocus type="text" name="dname" id="dname" maxlength="18" placeholder="请输入用户名..." />
+            <button id="showMybottle" type="button">显示我的瓶子</button>
+            <p id="mybottleTxt"></P>
+          </div>
+          <div class="mybottle-cont">
+            <!--<div class="mybottle-item" data-id="">
+               <p class="b-cont"></p>
+               <div class="button-cont">
+                <button class="replyBottle" type="button">回应</button>
+                <button class="deleteBottle" type="button">删除</button>
+                <p class="bottle-tips"></p>
+               </div>
+            </div>-->
+          </div>
+        </div>
+        <div class="tips-reply">
+          <div class="reply-cont">
+          </div>
+          <div class="reply-btn">
+            <textarea autofocus id="replyTxt" maxlength="100" placeholder="请输入内容..."></textarea>
+            <button id="replyOut" type="button">回复</button>
+            <p></p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+</html>
